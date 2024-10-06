@@ -16,6 +16,7 @@ header {
 nav ul {
     list-style-type: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -26,6 +27,11 @@ nav ul li {
 nav ul li a {
     color: #5e81ac;
     text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #88c0d0;
 }
 
 main {
@@ -39,6 +45,29 @@ section {
     border-radius: 5px;
 }
 
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery-item {
+    margin: 10px;
+    border: 1px solid #5e81ac;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    display: block;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
 footer {
     text-align: center;
     padding: 10px;
@@ -46,4 +75,9 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+.form-message {
+    color: #88c0d0;
+    margin-top: 10px;
 }

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Johnathan's Portfolio</title>
+    <title>Johnathan's Portfolio - Cybersecurity Engineer</title>
+    <meta name="description" content="Johnathan's personal portfolio showcasing his experience and skills in cybersecurity engineering.">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,6 +17,7 @@
             <li><a href="#about">About Me</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -38,9 +40,26 @@
                 <li>Tools: Wireshark, Metasploit, Git</li>
             </ul>
         </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="project1.jpg" alt="Project 1">
+                    <p>Project 1 Description</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="project2.jpg" alt="Project 2">
+                    <p>Project 2 Description</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="project3.jpg" alt="Project 3">
+                    <p>Project 3 Description</p>
+                </div>
+            </div>
+        </section>
         <section id="contact">
             <h2>Contact</h2>
-            <form>
+            <form id="contactForm">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 <label for="email">Email:</label>
@@ -48,6 +67,7 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
                 <button type="submit">Send</button>
+                <p id="formMessage" class="form-message"></p>
             </form>
         </section>
     </main>
